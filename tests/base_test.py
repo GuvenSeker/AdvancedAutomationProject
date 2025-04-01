@@ -72,7 +72,7 @@ class BaseTest(unittest.TestCase):
     def setUp(self):
         self.driver = self.get_driver()
         self.logger = init_logger()
-        self.logger.info(f"Running tests with {self.current_browser.upper()} browser")
+        self.logger.info(f"Running tests with{self.current_browser.upper()} browser")
         self.start_time = datetime.utcnow()
 
     def tearDown(self):
